@@ -14,12 +14,12 @@
             <h2>Total</h2>
             <div class="dollar">
                 <label>$</label>
-                <input id="total"  type="number">
+                <input id="total"  type="number" min="0" max="99999999999999">
             </div>
             <h2>Tip Percentage</h2>
             <div class="dollar">
                 <label>%</label>
-                <input type="number" id="tip-input" list="tip">
+                <input type="number" id="tip-input" list="tip" min="0" max="99999999999999">
                 <datalist id="tip">
                     <option value="5"></option>
                     <option value="10"></option>
@@ -30,11 +30,12 @@
             <h2>Amount of People</h2>
             <div class="dollar">
                 <label>#</label>
-                <input id="people" type="number">
+                <input id="people" type="number" min="0" max="99999999999999">
             </div>
         </div>
         <div class="result-container">
-            <p id="result">result</p>
+            <h2 id="total-tip">Total Tip: $0.00</h2>
+            <p id="result">0 people have to pay $0.00</p>
         </div>
     </div>
     <script src="index.js"></script>

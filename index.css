@@ -35,14 +35,14 @@ h2 {
     border-radius: 0px 80px 80px 0px;
     background-color: aqua;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   
 }
 #result {
-    visibility: hidden;
+    padding: 10px;
     text-align: center;
-    font-weight: bold;
     
 }
 
@@ -52,4 +52,8 @@ h2 {
 
 label {
     padding-right: 5px;
+}
+
+#total-tip {
+    padding: 10px;
 }
